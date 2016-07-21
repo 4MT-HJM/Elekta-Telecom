@@ -55,7 +55,7 @@ TEST(tests, BillForGoldAndSilverAccountWithFamilyDiscount)
 
   User user_2(GOLD, 5 ,999);
   BillCounter bill_2(user_2);
-  double expectBill_2 = 49.95 + 14.50*2 + 5.0*2  + 20*0.54;
+  double expectBill_2 = 49.95 + 14.50*2 + 5.0*2;
 
 	ASSERT_EQ(expectBill_1, bill_1.getBill());
 	ASSERT_EQ(expectBill_2, bill_2.getBill());
