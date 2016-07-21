@@ -17,6 +17,11 @@ public:
 	~BillCounter();
 
 private:
+	void countBill();
 	double totalBill;	
 	User l_user;
+	double InitCostForGoldPlan = 49.95;
+	double InitCostForSilverPlan = 29.95;
+	double OneAdditionalLineForGoldPlan = 14.50;
+	double OneAdditionalLineForSilverPlan = 21.50;
 };
