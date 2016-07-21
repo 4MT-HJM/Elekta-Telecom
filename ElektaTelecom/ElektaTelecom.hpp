@@ -28,4 +28,6 @@ private:
 	double OneExtraMinForSilverPlan = 0.54;
 	int MinThOfGoldPlan = 1000;
 	int MinThofSilverPlan = 500;
+	double OneAdditionalLineForFamilyDiscount = 5.0;
+	int ThOfLineNum = 3;
 };
