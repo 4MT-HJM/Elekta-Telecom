@@ -7,7 +7,7 @@ include_directories("googletest/googletest/include")
 include_directories("googletest/googlemock/include")
 include_directories("googletest/googletest")
 include_directories("googletest/googlemock")
-add_library(gtestgmock ./googletest/googletest/src/gtest-all.cc googletest/googlemock/src/gmock-all.cc)
+add_library(gtestgmock googletest/googletest/src/gtest-all.cc googletest/googlemock/src/gmock-all.cc)
 
 
 add_subdirectory(ElektaTelecom)
