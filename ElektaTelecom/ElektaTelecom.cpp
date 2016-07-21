@@ -15,11 +15,13 @@ void BillCounter::countBill()
 	{
 		totalBill += InitCostForGoldPlan;
 		totalBill += OneAdditionalLineForGoldPlan * (l_user.LineNum-1);
+		if(l_user.MinuUsed > MinThOfGoldPlan)totalBill += OneExtraMinForGoldPlan * (l_user.MinuUsed - MinThOfGoldPlan);
 	}
 	else if(l_user.PlanType == SILVER) 
 	{
 		totalBill += InitCostForSilverPlan;
 		totalBill += OneAdditionalLineForSilverPlan * (l_user.LineNum-1);
+		if(l_user.MinuUsed > MinThofSilverPlan)totalBill += OneExtraMinForSilverPlan * (l_user.MinuUsed - MinThofSilverPlan);
 	}
 
 }

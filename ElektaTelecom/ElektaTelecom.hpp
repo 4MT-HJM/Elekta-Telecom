@@ -24,4 +24,8 @@ private:
 	double InitCostForSilverPlan = 29.95;
 	double OneAdditionalLineForGoldPlan = 14.50;
 	double OneAdditionalLineForSilverPlan = 21.50;
+	double OneExtraMinForGoldPlan = 0.45;
+	double OneExtraMinForSilverPlan = 0.54;
+	int MinThOfGoldPlan = 1000;
+	int MinThofSilverPlan = 500;
 };
