@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "ElektaTelecom.hpp"
+#include "User.hpp"
 #include <memory>
 
 TEST(tests, BillForaGoldAccountWithOneLineAndUsesLessThanOneThousandMin)
